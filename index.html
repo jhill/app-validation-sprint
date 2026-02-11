@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iOS App Sprint — Landing Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+        }
+        h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        .card-1 .card-icon { background: linear-gradient(135deg, #667eea 0%, #4c63d2 100%); }
+        .card-2 .card-icon { background: linear-gradient(135deg, #11998e 0%, #0d7a6f 100%); }
+        .card-3 .card-icon { background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%); }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+        .card p {
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .card-tagline {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+        .footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1rem; }
+            .grid { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 iOS App Sprint</h1>
+        <p class="subtitle">Three validation experiments. One goal: find product-market fit.</p>
+        
+        <div class="grid">
+            <a href="pdf-scanner.html" class="card card-1">
+                <div class="card-icon">📄</div>
+                <h2>ScanSnap Pro</h2>
+                <p class="card-tagline">"The PDF scanner that actually works offline."</p>
+                <p>Privacy-first document scanning with on-device OCR. No accounts, no cloud nonsense.</p>
+            </a>
+            
+            <a href="freelancer-tool.html" class="card card-2">
+                <div class="card-icon">💸</div>
+                <h2>InvoiceCraft</h2>
+                <p class="card-tagline">"Invoice clients in 30 seconds from your phone."</p>
+                <p>Mobile-first invoicing for freelancers who are always on the go. Fast, professional, easy.</p>
+            </a>
+            
+            <a href="voice-journal.html" class="card card-3">
+                <div class="card-icon">🎙️</div>
+                <h2>MindVault</h2>
+                <p class="card-tagline">"Think out loud. Your AI organizes the rest."</p>
+                <p>Voice-first journaling with AI transcription. Capture thoughts naturally, stay consistent.</p>
+            </a>
+        </div>
+        
+        <div class="footer">
+            <p>Built for validation sprint • February 2026</p>
+        </div>
+    </div>
+</body>
+</html>
